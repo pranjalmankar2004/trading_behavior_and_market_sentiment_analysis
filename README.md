@@ -1,14 +1,4 @@
-This project analyzes the relationship between trader behavior on Hyperliquid exchange and Bitcoin market sentiment (Fear & Greed Index). The analysis explores how market emotions influence trading profitability, volume patterns, win rates, and overall trading performance.
-Google Colab Notebook
-Primary Analysis: View Notebook
-Note: Notebook is set to "Anyone with the link can view" as per requirements
-Repository Structure
-ds_pranjal_mankar/
-├── notebook_1.ipynb          
-├── csv_files/                 
-├── outputs/                   
-├── ds_report.pdf             
-└── README.md                 
+This project analyzes the relationship between trader behavior on Hyperliquid exchange and Bitcoin market sentiment (Fear & Greed Index). The analysis explores how market emotions influence trading profitability, volume patterns, win rates, and overall trading performance.               
 Datasets Used
 1.	Bitcoin Market Sentiment Dataset
 •	Source: Fear & Greed Index
