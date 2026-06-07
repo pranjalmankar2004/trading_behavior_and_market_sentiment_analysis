@@ -1,72 +1,114 @@
-This project analyzes the relationship between trader behavior on Hyperliquid exchange and Bitcoin market sentiment (Fear & Greed Index). The analysis explores how market emotions influence trading profitability, volume patterns, win rates, and overall trading performance.               
-Datasets Used
-1.	Bitcoin Market Sentiment Dataset
-•	Source: Fear & Greed Index
-•	Columns: Date, Classification (Fear/Greed categories)
-2.	Historical Trader Data from Hyperliquid
-•	Columns: account, symbol, execution price, size, side, time, start position, event, closedPnL, leverage, etc.
-Key Findings
-•	Most Profitable Period: Extreme Greed ($67.89 average PnL)
-•	Least Profitable Period: Neutral ($34.31 average PnL)
-•	Highest Win Rate: Extreme Greed (52% success rate)
-•	Lowest Win Rate: Extreme Fear (37% success rate)
-•	Statistical Significance: p-value = 0.0000 (highly significant)
-Technologies & Libraries Used
-•	Python 3.x
-•	pandas - Data manipulation and analysis
-•	numpy - Numerical computations
-•	matplotlib - Data visualization
-•	seaborn - Statistical visualizations
-•	scipy.stats - Statistical testing (Kruskal-Wallis test)
-•	Google Colab - Development environment
-Analysis Methodology
-1.	Data Cleaning & Preprocessing
-•	Timestamp normalization and date alignment
-•	Numeric conversion for PnL and volume columns
-•	Missing value handling
-2.	Exploratory Data Analysis
-•	Sentiment distribution analysis
-•	Trading volume patterns by sentiment
-•	Profit/Loss distribution across market emotions
-•	Win rate calculations
-3.	Statistical Testing
-•	Kruskal-Wallis test for comparing multiple groups
-•	Statistical significance validation
-4.	Visualization & Insights
-•	Four comprehensive charts showing key relationships
-•	Performance summary generation
-•	Trading strategy recommendations
-How to Run the Analysis
-1.	Open the Google Colab notebook
-2.	Upload the dataset files to Colab environment:
-•	fear_greed_index.csv
-•	historical_data.csv
-3.	Run all cells sequentially
-4.	Generated outputs will be saved automatically
-Key Insights & Recommendations
-Trading Strategies Discovered:
-•	Contrarian Approach: Buy during high fear periods when markets overreact
-•	Momentum Trading: Increase positions during moderate greed periods
-•	Dynamic Risk Management: Adjust position sizes based on sentiment intensity
-•	Sentiment Monitoring: Use emotion shifts as early reversal indicators
-Risk Management:
-•	Reduce exposure during extreme sentiment periods (both fear and greed)
-•	Apply stricter stop-losses during volatile sentiment phases
-•	Monitor sentiment transitions for optimal entry/exit timing
-Generated Outputs
-CSV Files:
-•	merged_dataset.csv: Complete analysis dataset with sentiment alignment
-•	performance_summary.csv: Statistical summaries grouped by sentiment
-Visualizations:
-•	Sentiment Distribution: Market emotion frequency analysis
-•	PnL by Sentiment: Profit/loss patterns across different market moods
-•	Volume Analysis: Trade size variations by sentiment category
-•	Win Rate Analysis: Success probability across sentiment states
-Business Impact
-This analysis provides actionable insights for:
-•	Algorithmic Trading Systems: Sentiment-based strategy implementation
-•	Risk Management: Dynamic position sizing based on market emotions
-•	Market Timing: Optimal entry/exit point identification
-•	Performance Optimization: Strategy adjustment based on psychological factors
-This project demonstrates expertise in data analysis, statistical testing, financial market understanding, and practical strategy development for cryptocurrency trading environments.
+Trading Behavior & Market Sentiment Analysis
+Overview
 
+This project investigates the relationship between cryptocurrency trader behavior on the Hyperliquid exchange and Bitcoin market sentiment using the Fear & Greed Index. The objective was to determine how market emotions influence trading profitability, win rates, trade volume, and overall trading performance.
+
+By combining historical trading records with sentiment data, the analysis uncovers statistically significant behavioral patterns that can support data-driven trading and risk management strategies.
+
+Datasets Used
+Bitcoin Fear & Greed Index
+
+Market sentiment dataset containing daily classifications:
+
+Extreme Fear
+Fear
+Neutral
+Greed
+Extreme Greed
+Hyperliquid Historical Trading Data
+
+Trading dataset containing:
+
+Account Information
+Trading Symbol
+Execution Price
+Position Size
+Trade Direction
+Timestamp
+Leverage
+Closed Profit & Loss (PnL)
+Position Details
+Objectives
+Analyze how market sentiment affects trading profitability.
+Compare win rates across sentiment categories.
+Study trading volume behavior under different market emotions.
+Validate findings using statistical testing.
+Generate actionable trading and risk management insights.
+Methodology
+1. Data Cleaning & Preprocessing
+Standardized timestamps and date formats.
+Converted PnL and volume fields into numerical values.
+Aligned trading records with corresponding sentiment data.
+Handled missing and inconsistent values.
+2. Data Integration
+Merged trader activity with daily Fear & Greed Index values.
+Created a unified dataset for sentiment-based performance analysis.
+3. Exploratory Data Analysis
+
+Performed analysis on:
+
+Sentiment distribution
+Profitability by sentiment
+Trading volume patterns
+Win rate comparison
+4. Statistical Testing
+
+Applied the Kruskal-Wallis test to verify whether profitability differences across sentiment groups were statistically significant.
+
+5. Visualization
+
+Generated multiple visualizations to identify trends and support conclusions.
+
+Key Findings
+Metric	Result
+Most Profitable Sentiment	Extreme Greed
+Average PnL During Extreme Greed	$67.89
+Least Profitable Sentiment	Neutral
+Average PnL During Neutral Markets	$34.31
+Highest Win Rate	Extreme Greed (52%)
+Lowest Win Rate	Extreme Fear (37%)
+Statistical Significance	p-value = 0.0000
+Major Insights
+Traders achieved the highest profitability during Extreme Greed periods.
+Extreme Fear conditions produced the lowest trading success rates.
+Trading volume decreased significantly during fearful market conditions.
+Sentiment has a measurable and statistically significant impact on trading performance.
+Trading & Risk Management Recommendations
+Contrarian Trading
+Explore buying opportunities during Fear and Extreme Fear periods when markets may be overreacting.
+Dynamic Position Sizing
+Increase caution during highly emotional market conditions.
+Adjust exposure according to sentiment intensity.
+Risk Management
+Apply stricter stop-loss mechanisms during volatile sentiment phases.
+Reduce concentration risk during extreme market conditions.
+Sentiment Monitoring
+Use shifts in market sentiment as potential indicators of trend reversals and changing market conditions.
+Technologies Used
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+SciPy
+Google Colab
+Outputs Generated
+Processed Data
+merged_dataset.csv
+performance_summary.csv
+Visualizations
+Sentiment Distribution Analysis
+Profit/Loss by Sentiment
+Trading Volume by Sentiment
+Win Rate by Sentiment
+Business Impact
+
+This analysis demonstrates how sentiment-driven insights can support:
+
+Algorithmic Trading Systems
+Portfolio Risk Management
+Dynamic Position Sizing
+Trading Strategy Optimization
+Market Timing Decisions
+
+The project showcases practical applications of data science, statistical analysis, financial analytics, and behavioral market research within cryptocurrency trading environments.
