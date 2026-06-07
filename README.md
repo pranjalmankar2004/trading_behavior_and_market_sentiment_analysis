@@ -1,4 +1,4 @@
-# 📈 Trading Behavior & Market Sentiment Analysis
+#  Trading Behavior & Market Sentiment Analysis
 
 ## Overview
 
@@ -109,11 +109,4 @@ This analysis demonstrates how sentiment-driven insights can support:
 - Trading Strategy Optimization
 - Market Timing Decisions
 
----
 
-## Author
-
-**Pranjal Mankar**
-
-- GitHub: https://github.com/pranjalmankar2004
-- LinkedIn: https://linkedin.com/in/pranjal-mankar
